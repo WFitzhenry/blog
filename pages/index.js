@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export async function getStaticProps() {
+
   const files = fs.readdirSync('posts');
 
   const posts = files.map((fileName) => {
