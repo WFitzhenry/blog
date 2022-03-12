@@ -1,6 +1,7 @@
 import fs from 'fs';
 import matter from 'gray-matter';
 import md from 'markdown-it';
+import { GetStaticProps } from 'next';
 
 export async function getStaticPaths() {
   const files = fs.readdirSync('posts');
