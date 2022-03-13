@@ -1,0 +1,27 @@
+{
+  "type": "directory",
+  "children": [
+    {
+      "type": "file",
+      "route": "Open-EdTech/next-mdx-books/about.md",
+      "title": "About",
+      "rawUrl": "https://raw.githubusercontent.com//Open-EdTech/next-mdx-books/main/DOCS/about.md",
+      "ghUrl": "https://github.com/Open-EdTech/next-mdx-books/blob/main/DOCS/about.md",
+      "treePath": [0],
+      "children": [
+        {
+          "title": "Purpose/Design",
+          "route": "Open-EdTech/next-mdx-books/about.md/#purposedesign",
+          "type": "heading",
+          "treePath": [0, 0]
+        },
+        {
+          "title": "Installation",
+          "route": "Open-EdTech/next-mdx-books/about.md/#installation",
+          "type": "heading",
+          "treePath": [0, 1]
+        }
+      ]
+    }
+  ]
+}

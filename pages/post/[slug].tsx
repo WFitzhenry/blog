@@ -1,7 +1,10 @@
 import fs from 'fs'
 import matter from 'gray-matter'
 import md from 'markdown-it'
-import { GetStaticProps, GetStaticPaths} from 'next'
+import { GetStaticProps, GetStaticPaths } from 'next'
+
+//https://medium.com/swlh/build-sidebar-navigation-in-next-js-with-tailwindcss-3619b6b42e17
+//https://github.com/MatthewCaseres/markdownbooks.com/blob/main/pages/%5B...id%5D.js
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const files = fs.readdirSync('posts')
@@ -16,7 +19,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   }
 }
 
-export const getStaticProps: GetStaticProps = async({ params: { slug } }) => {
+export const getStaticProps: GetStaticProps = async ({ params: { slug } }) => {
   const fileName = fs.readFileSync(`posts/${slug}.md`, 'utf-8')
   const { data: frontmatter, content } = matter(fileName)
   return {
