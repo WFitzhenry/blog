@@ -57,10 +57,7 @@ export default function Layout({ children }) {
     <div className="flex flex-col min-h-screen">
       <header className="bg-slate-200 py-4 mb-2">
         <div className="container mx-auto flex justify-center">
-          <Link href="/">
-            <a>🏡</a>
-          </Link>
-          <span className="mx-auto">Welcome to my blog</span>{' '}
+          <span className="mx-auto">Notes on Software Development</span>{' '}
         </div>
       </header>
       <div className="flex flex-col md:flex-row flex-1">
