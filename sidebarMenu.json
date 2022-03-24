@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "items": [
+    {
+      "name": "home",
+      "label": "Home",
+      "route": "Open-EdTech/next-mdx-books/about.md",
+      "items": []
+    },
+    {
+      "name": "javascript",
+      "label": "JavaScript",
+      "items": [
+        {
+          "name": "statements",
+          "label": "Statements"
+        },
+        {
+          "name": "reports",
+          "label": "Reports"
+        }
+      ]
+    },
+    "divider"
+  ]
+}

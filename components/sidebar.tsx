@@ -27,9 +27,9 @@ function SidebarItem({ depthStep = 10, depth = 0, item, ...rest }) {
 
   if (Array.isArray(items) && items.length) {
     expandIcon = !collapsed ? (
-      <ExpandLessIcon className={' font-bold text-green-500'} />
+      <ExpandLessIcon className={'font-bold text-green-500'} />
     ) : (
-      <ExpandMoreIcon className="sidebar-item-expand-arrow" />
+      <ExpandMoreIcon />
     )
   }
 
