@@ -14,7 +14,7 @@ const items = [
   { name: 'home', label: 'Home', Icon: HomeIcon },
   {
     name: 'billing',
-    label: 'Billing',
+    label: 'JavaScript',
     Icon: ReceiptIcon,
     items: [
       { name: 'statements', label: 'Statements', onClick },

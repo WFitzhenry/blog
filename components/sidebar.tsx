@@ -8,7 +8,7 @@ import { useState, Fragment } from 'react'
 
 function SidebarItem({ depthStep = 10, depth = 0, item, ...rest }) {
   const [collapsed, setCollapsed] = useState(true)
-  const { label, items, Icon, onClick: onClickProp } = item
+  const { label, items, onClick: onClickProp } = item
 
   function toggleCollapse() {
     setCollapsed((prevValue) => !prevValue)
@@ -40,7 +40,6 @@ function SidebarItem({ depthStep = 10, depth = 0, item, ...rest }) {
           style={{ paddingLeft: depth * depthStep }}
           className="flex w-full items-center"
         >
-          {Icon && <Icon className="mr-2" fontSize="small" />}
           <div className="flex w-full">{label}</div>
         </div>
         {expandIcon}
