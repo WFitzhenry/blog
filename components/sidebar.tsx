@@ -5,6 +5,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import ExpandLessIcon from '@material-ui/icons/ExpandLess'
 import Collapse from '@material-ui/core/Collapse'
 import { useState, Fragment } from 'react'
+import Link from 'next/link'
 
 function SidebarItem({ depthStep = 10, depth = 0, item, ...rest }) {
   const [collapsed, setCollapsed] = useState(true)
@@ -35,7 +36,15 @@ function SidebarItem({ depthStep = 10, depth = 0, item, ...rest }) {
 
   return (
     <>
-      <ListItem className="flex p-2" onClick={onClick} button dense {...rest}>
+      <ListItem
+        component="a"
+        href={item.route}
+        className="flex p-2"
+        onClick={onClick}
+        button
+        dense
+        {...rest}
+      >
         <div
           style={{ paddingLeft: depth * depthStep }}
           className="flex w-full items-center"

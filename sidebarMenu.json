@@ -4,7 +4,7 @@
     {
       "name": "home",
       "label": "Home",
-      "route": "Open-EdTech/next-mdx-books/about.md",
+      "route": "/post/nextjs-page-options-and-how-they-work",
       "items": []
     },
     {
@@ -13,11 +13,13 @@
       "items": [
         {
           "name": "statements",
-          "label": "Statements"
+          "label": "Statements",
+          "route": "/post/nextjs-static-html-export"
         },
         {
           "name": "reports",
-          "label": "Reports"
+          "label": "Reports",
+          "route": "/post/nextjs-page-options-and-how-they-work"
         }
       ]
     },
