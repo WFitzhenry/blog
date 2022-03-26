@@ -6,6 +6,7 @@ socialImage: images/03-10-2021.jpg
 date: '2021-10-03'
 tags:
   - nextjs
+key: 3
 ---
 
 If you are looking for the best hosting for your Next.js application, check out [Vercel as your Next.js host](https://daily-dev-tips.com/posts/deploying-a-nextjs-application-on-vercel/).

@@ -83,8 +83,8 @@ We already have a `playlists` endpoint so let's leverage that one but modify it 
 Open the `pages/api/playlists.js` file and start by importing the Prisma requirements.
 
 ```js
-import { PrismaClient } from '@prisma/client';
-const prisma = new PrismaClient();
+import { PrismaClient } from '@prisma/client'
+const prisma = new PrismaClient()
 ```
 
 Now let's modify the handler to do something on `POST` and `GET`.
@@ -93,34 +93,34 @@ Now let's modify the handler to do something on `POST` and `GET`.
 const handler = async (req, res) => {
   const {
     token: { accessToken, email },
-  } = await getSession({ req });
+  } = await getSession({ req })
   if (req.method === 'POST') {
     // Do post stuff
   } else if (req.method === 'GET') {
-    const response = await getUsersPlaylists(accessToken);
-    const { items } = await response.json();
-    return res.status(200).json({ items });
+    const response = await getUsersPlaylists(accessToken)
+    const { items } = await response.json()
+    return res.status(200).json({ items })
   }
-  res.end();
-};
+  res.end()
+}
 ```
 
 As for the `POST` section, we want to extract the correct data from our post query and create a new object to send to our database.
 
 ```js
 if (req.method === 'POST') {
-  const { body } = req;
+  const { body } = req
   const {
     name,
     images: { 0: { url } = {} },
     uri,
-  } = JSON.parse(body);
+  } = JSON.parse(body)
   const playlistItem = {
     title: name,
     image: url,
     uri: uri,
     addedBy: email,
-  };
+  }
 }
 ```
 
@@ -129,8 +129,8 @@ Then all we need to do is call our Prisma client and use the `create` function t
 ```js
 const playlist = await prisma.playlist.create({
   data: playlistItem,
-});
-return res.status(200).json(playlist);
+})
+return res.status(200).json(playlist)
 ```
 
 And that's it, if we now perform a `POST` request to this API endpoint, our playlist will be added.
@@ -145,11 +145,11 @@ Inside the map function add a button with a click action like so:
   list.map((item) => (
     <div key={item.id}>
       <h1>{item.name}</h1>
-      <img src={item.images[0]?.url} width='100' />
+      <img src={item.images[0]?.url} width="100" />
       <br />
       <button onClick={() => saveToDatabase(item)}>Save in database</button>
     </div>
-  ));
+  ))
 }
 ```
 
@@ -160,9 +160,9 @@ const saveToDatabase = async (item) => {
   const res = await fetch('api/playlists', {
     method: 'POST',
     body: JSON.stringify(item),
-  });
-  const data = await res.json();
-};
+  })
+  const data = await res.json()
+}
 ```
 
 In our case, we are just passing the API request but not doing anything with the return data yet.

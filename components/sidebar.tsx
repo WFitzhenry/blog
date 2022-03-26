@@ -7,9 +7,11 @@ import Collapse from '@material-ui/core/Collapse'
 import { useState, Fragment } from 'react'
 import Link from 'next/link'
 
-function SidebarItem({ depthStep = 10, depth = 0, item, ...rest }) {
-  const [collapsed, setCollapsed] = useState(true)
+function SidebarItem({ depthStep = 10, depth = 0, item, expanded, ...rest }) {
   const { label, items, onClick: onClickProp } = item
+  // const initialState =
+  //   expanded === undefined ? true : !item.itemKeys?.includes(expanded)
+  const [collapsed, setCollapsed] = useState(true)
 
   function toggleCollapse() {
     setCollapsed((prevValue) => !prevValue)
@@ -36,22 +38,16 @@ function SidebarItem({ depthStep = 10, depth = 0, item, ...rest }) {
 
   return (
     <>
-      <ListItem
-        component="a"
-        href={item.route}
-        className="flex p-2"
-        onClick={onClick}
-        button
-        dense
-        {...rest}
-      >
-        <div
-          style={{ paddingLeft: depth * depthStep }}
-          className="flex w-full items-center"
-        >
-          <div className="flex w-full">{label}</div>
-        </div>
-        {expandIcon}
+      <ListItem className="flex p-2" onClick={onClick} button dense {...rest}>
+        <Link href={item.route} passHref>
+          <a
+            style={{ paddingLeft: depth * depthStep }}
+            className="flex w-full items-center"
+          >
+            <div className="flex w-full">{label}</div>
+            {expandIcon}
+          </a>
+        </Link>
       </ListItem>
       <Collapse in={!collapsed} timeout="auto" unmountOnExit>
         {Array.isArray(items) ? (
@@ -65,6 +61,7 @@ function SidebarItem({ depthStep = 10, depth = 0, item, ...rest }) {
                     depth={depth + 1}
                     depthStep={depthStep}
                     item={subItem}
+                    expanded={expanded}
                   />
                 )}
               </Fragment>

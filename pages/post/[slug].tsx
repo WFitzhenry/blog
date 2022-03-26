@@ -19,8 +19,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
   }
 }
 
-export const getStaticProps: GetStaticProps = async ({ params: { slug } }) => {
-  const fileName = fs.readFileSync(`posts/${slug}.md`, 'utf-8')
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const fileName = fs.readFileSync(`posts/${params.slug}.md`, 'utf-8')
   const { data: frontmatter, content } = matter(fileName)
   return {
     props: {

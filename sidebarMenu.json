@@ -4,17 +4,18 @@
     {
       "name": "home",
       "label": "Home",
-      "route": "/post/nextjs-page-options-and-how-they-work",
+      "route": "/",
       "items": []
     },
     {
       "name": "javascript",
       "label": "JavaScript",
+      "route": "/post/nextjs-page-options-and-how-they-work",
       "items": [
         {
           "name": "statements",
           "label": "Statements",
-          "route": "/post/nextjs-static-html-export"
+          "route": "/post/nextjs-page-options-and-how-they-work"
         },
         {
           "name": "reports",

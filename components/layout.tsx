@@ -2,6 +2,7 @@ import Sidebar from './sidebar'
 import index from '../sidebarMenu.json'
 
 export default function Layout({ children }) {
+  console.log(children.props.frontmatter?.key)
   return (
     <div className="flex flex-col min-h-screen">
       <header className="bg-slate-200 py-4 mb-2">
@@ -14,7 +15,7 @@ export default function Layout({ children }) {
           items={index.items}
           depthStep={undefined}
           depth={undefined}
-          expanded={undefined}
+          expanded={children.props.frontmatter?.key}
         />
         <main className="container mx-auto flex-1">{children}</main>
       </div>
