@@ -2,7 +2,6 @@ import Sidebar from './sidebar'
 import index from '../sidebarMenu.json'
 
 export default function Layout({ children }) {
-  console.log(children.props.frontmatter?.key)
   return (
     <div className="flex flex-col min-h-screen">
       <header className="bg-slate-200 py-4 mb-2">
