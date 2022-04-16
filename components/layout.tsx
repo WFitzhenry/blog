@@ -14,7 +14,7 @@ export default function Layout({ children }) {
           items={index.items}
           depthStep={undefined}
           depth={undefined}
-          expanded={children.props.frontmatter?.key}
+          expanded={true}
         />
         <main className="container mx-auto flex-1">{children}</main>
       </div>
@@ -26,3 +26,9 @@ export default function Layout({ children }) {
     </div>
   )
 }
+// https://betterprogramming.pub/create-a-modern-dynamic-sidebar-menu-in-react-using-recursion-f757135045bc
+// https://medium.com/swlh/build-sidebar-navigation-in-next-js-with-tailwindcss-3619b6b42e17
+
+// https://www.openedtech.dev/basarat/typescript-book/docs/javascript/references.md
+
+// https://daily-dev-tips.com/posts/creating-a-sidebar-layout-in-nextjs-with-tailwind/

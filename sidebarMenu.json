@@ -3,8 +3,8 @@
   "items": [
     {
       "name": "home",
-      "label": "Home",
-      "route": "/",
+      "label": "Warren Fitzhenry",
+      "route": "/post/home",
       "items": []
     },
     {
@@ -13,13 +13,62 @@
       "route": "/post/nextjs-page-options-and-how-they-work",
       "items": [
         {
-          "name": "statements",
-          "label": "Statements",
+          "name": "basic",
+          "label": "Basics",
           "route": "/post/nextjs-page-options-and-how-they-work"
         },
         {
-          "name": "reports",
-          "label": "Reports",
+          "name": "hoisting",
+          "label": "Hoisting",
+          "route": "/post/nextjs-page-options-and-how-they-work"
+        }
+      ]
+    },
+    {
+      "name": "algorithms",
+      "label": "Algorithms",
+      "route": "/post/nextjs-page-options-and-how-they-work",
+      "items": [
+        {
+          "name": "bigO",
+          "label": "Big O Notation",
+          "route": "/post/nextjs-page-options-and-how-they-work"
+        },
+        {
+          "name": "recursion",
+          "label": "Recursion",
+          "route": "/post/nextjs-page-options-and-how-they-work"
+        },
+        {
+          "name": "sort",
+          "label": "Sort Algorithms",
+          "route": "/post/nextjs-page-options-and-how-they-work"
+        }
+      ]
+    },
+    {
+      "name": "dataStructures",
+      "label": "Data Structures",
+      "route": "/post/nextjs-page-options-and-how-they-work",
+      "items": [
+        {
+          "name": "array",
+          "label": "Arrays and Linked Lists",
+          "route": "/post/nextjs-page-options-and-how-they-work"
+        },
+        {
+          "name": "recursion",
+          "label": "Stacks and Queues",
+          "route": "/post/nextjs-page-options-and-how-they-work"
+        },
+        {
+          "name": "trees",
+          "label": "Trees",
+          "route": "/post/nextjs-page-options-and-how-they-work"
+        },
+        {
+          "name": "graphs",
+          "label": "Graphs",
           "route": "/post/nextjs-page-options-and-how-they-work"
         }
       ]
