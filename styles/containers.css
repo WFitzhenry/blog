@@ -1,0 +1,20 @@
+.info {
+  background-color: #c6e7cf;
+  color: #215d42;
+  border-left: 5px solid #42b983;
+  padding: 20px;
+  border-radius: 0 0.2em 0.2em 0;
+}
+
+.info ul {
+  list-style: none; /* Remove default bullets */
+}
+
+.info ul li::before {
+  content: '\2022';
+  color: #215d42;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}

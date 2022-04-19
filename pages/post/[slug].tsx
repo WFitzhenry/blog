@@ -1,6 +1,19 @@
 import fs from 'fs'
 import matter from 'gray-matter'
-import md from 'markdown-it'
+import markdownIt from 'markdown-it'
+import highlightjs from 'markdown-it-highlightjs'
+import mark from 'markdown-it-mark'
+import container from 'markdown-it-container'
+import iframe from 'markdown-it-iframe'
+const md = markdownIt()
+  .use(highlightjs)
+  .use(mark)
+  .use(container, 'info')
+  .use(iframe, {
+    allowfullscreen: true,
+    width: 400,
+    height: 400,
+  })
 import { GetStaticProps, GetStaticPaths } from 'next'
 
 //https://medium.com/swlh/build-sidebar-navigation-in-next-js-with-tailwindcss-3619b6b42e17
@@ -34,7 +47,7 @@ export default function PostPage({ frontmatter, content }) {
   return (
     <div className="prose mx-auto">
       <h1>{frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
+      <div dangerouslySetInnerHTML={{ __html: md.render(content) }} />
     </div>
   )
 }
