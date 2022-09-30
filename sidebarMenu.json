@@ -35,6 +35,16 @@
           "route": "/post/nextjs-page-options-and-how-they-work"
         },
         {
+          "name": "graphs",
+          "label": "Graphs",
+          "route": "/post/graphs"
+        },
+        {
+          "name": "dfs",
+          "label": "Depth First Search",
+          "route": "/post/dfs"
+        },
+        {
           "name": "recursion",
           "label": "Recursion",
           "route": "/post/nextjs-page-options-and-how-they-work"
@@ -69,6 +79,50 @@
         {
           "name": "graphs",
           "label": "Graphs",
+          "route": "/post/nextjs-page-options-and-how-they-work"
+        }
+      ]
+    },
+    {
+      "name": "gitlab",
+      "label": "Gitlab DevOps",
+      "route": "/post/gitlab-pipelines",
+      "items": [
+        {
+          "name": "pipelines",
+          "label": "Pipelines",
+          "route": "/post/gitlab-pipelines"
+        },
+        {
+          "name": "ci",
+          "label": "Continuous Itegration",
+          "route": "/post/gitlab-ci"
+        },
+        {
+          "name": "deployment",
+          "label": "Deployment to AWS S3",
+          "route": "/post/gitlab-deployment"
+        },
+        {
+          "name": "deploymentElastic",
+          "label": "Deployment to AWS Elastic",
+          "route": "/post/gitlab-aws-elastic"
+        }
+      ]
+    },
+    {
+      "name": "courses",
+      "label": "Course Notes",
+      "route": "/post/nextjs-page-options-and-how-they-work",
+      "items": [
+        {
+          "name": "basic",
+          "label": "Basics",
+          "route": "/post/nextjs-page-options-and-how-they-work"
+        },
+        {
+          "name": "hoisting",
+          "label": "Hoisting",
           "route": "/post/nextjs-page-options-and-how-they-work"
         }
       ]

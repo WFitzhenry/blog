@@ -3,3 +3,12 @@ https://daily-dev-tips.com/posts/adding-code-highlighting-to-markdown-code-block
 
 highlight side bar menu with currently active page.
 
+algorithms:
+
+https://www.algorithms-and-technologies.com/point_in_polygon/javascript
+
+coding math
+https://www.youtube.com/user/codingmath/featured
+
+data science
+https://www.youtube.com/playlist?list=PLGLfVvz_LVvQy4mkmEvtFwZGg1S38MUmn
