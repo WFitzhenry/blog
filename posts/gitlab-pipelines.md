@@ -1,14 +1,6 @@
 ---
-# title: 'Home'
-metaTitle: 'gitlab'
-metaDesc: 'Gitlab'
-date: '2022-05-18'
-tags:
-  - gitlab
-key: 1
+title: 'Gitlab Pipelines'
 ---
-
-## Gitlab DevOps - Pipelines
 
 ::: info
 Course Link: https://www.freecodecamp.org/news/devops-with-gitlab-ci-course/

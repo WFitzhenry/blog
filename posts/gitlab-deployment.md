@@ -1,13 +1,6 @@
 ---
-metaTitle: 'gitlab'
-metaDesc: 'Gitlab'
-date: '2022-05-18'
-tags:
-  - gitlab
-key: 1
+title: 'Gitlab Deployments'
 ---
-
-Deployment
 
 AWS
 

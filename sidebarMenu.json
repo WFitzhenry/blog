@@ -3,56 +3,19 @@
   "items": [
     {
       "name": "home",
-      "label": "Warren Fitzhenry",
-      "route": "/post/home",
+      "label": "Home",
+      "route": "/",
       "items": []
     },
     {
-      "name": "javascript",
-      "label": "JavaScript",
-      "route": "/post/nextjs-page-options-and-how-they-work",
+      "name": "principles",
+      "label": "Comp. Science Principles",
+      "route": "/post/comp-sci-principles",
       "items": [
         {
-          "name": "basic",
-          "label": "Basics",
-          "route": "/post/nextjs-page-options-and-how-they-work"
-        },
-        {
-          "name": "hoisting",
-          "label": "Hoisting",
-          "route": "/post/nextjs-page-options-and-how-they-work"
-        }
-      ]
-    },
-    {
-      "name": "algorithms",
-      "label": "Algorithms",
-      "route": "/post/nextjs-page-options-and-how-they-work",
-      "items": [
-        {
-          "name": "bigO",
+          "name": "bigo",
           "label": "Big O Notation",
-          "route": "/post/nextjs-page-options-and-how-they-work"
-        },
-        {
-          "name": "graphs",
-          "label": "Graphs",
-          "route": "/post/graphs"
-        },
-        {
-          "name": "dfs",
-          "label": "Depth First Search",
-          "route": "/post/dfs"
-        },
-        {
-          "name": "recursion",
-          "label": "Recursion",
-          "route": "/post/nextjs-page-options-and-how-they-work"
-        },
-        {
-          "name": "sort",
-          "label": "Sort Algorithms",
-          "route": "/post/nextjs-page-options-and-how-they-work"
+          "route": "/post/comp-sci-principles-bigo-notation"
         }
       ]
     },
@@ -75,10 +38,80 @@
           "name": "trees",
           "label": "Trees",
           "route": "/post/nextjs-page-options-and-how-they-work"
+        }
+      ]
+    },
+    {
+      "name": "codingmath",
+      "label": "Coding Math",
+      "route": "/post/coding-math-intro",
+      "items": [
+        {
+          "name": "trigonometry",
+          "label": "Trigonometry",
+          "route": "/post/coding-math-trigonometry"
+        }
+      ]
+    },
+    {
+      "name": "Algorithms",
+      "label": "Algorithms",
+      "route": "/post/algorithms",
+      "items": [
+        {
+          "name": "bigo",
+          "label": "Big O Notation",
+          "route": "/post/algorithms-bigo"
         },
         {
-          "name": "graphs",
-          "label": "Graphs",
+          "name": "algorithms-search",
+          "label": "Search algorithms",
+          "route": "/post/algorithms-search",
+          "items": [
+            {
+              "name": "linear",
+              "label": "Linear Search",
+              "route": "/post/algorithms-search-linear"
+            }
+          ]
+        },
+        {
+          "name": "algorithms-graph",
+          "label": "Graph algorithms",
+          "route": "/post/algorithms-graph",
+          "items": [
+            {
+              "name": "dfs",
+              "label": "Depth First Search",
+              "route": "/post/algorithms-graph-dfs"
+            },
+            {
+              "name": "bfs",
+              "label": "Breadth First Search",
+              "route": "/post/algorithms-graph-bfs"
+            },
+            {
+              "name": "dikstra",
+              "label": "Dijkstra's Shortest Path",
+              "route": "/post/algorithms-graph-dijkstra"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "javascript",
+      "label": "JavaScript",
+      "route": "/post/nextjs-page-options-and-how-they-work",
+      "items": [
+        {
+          "name": "basic",
+          "label": "Basics",
+          "route": "/post/nextjs-page-options-and-how-they-work"
+        },
+        {
+          "name": "hoisting",
+          "label": "Hoisting",
           "route": "/post/nextjs-page-options-and-how-they-work"
         }
       ]

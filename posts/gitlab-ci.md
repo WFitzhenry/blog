@@ -1,14 +1,6 @@
 ---
-# title: 'Home'
-metaTitle: 'gitlab'
-metaDesc: 'Gitlab'
-date: '2022-05-18'
-tags:
-  - gitlab
-key: 1
+title: 'Gitlab Continuous Integration'
 ---
-
-## Gitlab Continuous Integration
 
 Continuous integration means that we are continually making sure any changes are run through a pipeline to be ready for review.
 

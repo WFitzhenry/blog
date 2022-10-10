@@ -15,17 +15,19 @@ export async function getStaticProps() {
     }
   })
 
+  const topLevelPosts = posts.filter((post) => post.frontmatter.topLevel)
+
   return {
     props: {
-      posts,
+      topLevelPosts,
     },
   }
 }
 
-export default function Home({ posts }) {
+export default function Home({ topLevelPosts }) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 p-4 md:p-0">
-      {posts.map(({ slug, frontmatter }) => (
+      {topLevelPosts.map(({ slug, frontmatter }) => (
         <div
           key={slug}
           className="border border-gray-200 m-2 rounded-xl shadow-lg overflow-hidden flex flex-col"

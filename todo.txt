@@ -5,7 +5,16 @@ highlight side bar menu with currently active page.
 
 algorithms:
 
+Introduction to Algorithms book!
+
 https://www.algorithms-and-technologies.com/point_in_polygon/javascript
+
+course:
+https://frontendmasters.com/courses/algorithms/
+https://theprimeagen.github.io/fem-algos/lessons/algorithms-and-time-space-complexity/time-and-space-complexity
+
+
+
 
 coding math
 https://www.youtube.com/user/codingmath/featured

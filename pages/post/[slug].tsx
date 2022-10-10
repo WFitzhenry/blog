@@ -11,7 +11,7 @@ const md = markdownIt()
   .use(container, 'info')
   .use(iframe, {
     allowfullscreen: true,
-    width: 400,
+    width: 800,
     height: 400,
   })
 import { GetStaticProps, GetStaticPaths } from 'next'
