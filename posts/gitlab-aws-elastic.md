@@ -253,6 +253,4 @@ deploy to production:
         - curl $CI_ENVIRONMENT_URL/version.html | grep $APP_VERSION   // testing the URL
 ```
 
-
 CI/CD Recap
-
