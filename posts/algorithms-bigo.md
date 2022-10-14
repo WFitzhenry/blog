@@ -24,3 +24,24 @@ function sum_char_codes(n: string): number {
 Here we have an ==N== relationship, or ==O(N) time complexity==.
 
 For every 50% growth in the input (length of the string), we will have a 50% reduction in speed of the function.
+
+A simple trick is to look for loops - where do you loop over the input?
+
+If the previous was ==O(N)==, then what is this?
+
+```
+function sum_char_codes(n: string): number {
+    let sum = 0;
+    for (let i = 0; i < n.length; ++i) {
+        sum += n.charCodeAt(i);
+    }
+
+    for (let i = 0; i < n.length; ++i) {
+        sum += n.charCodeAt(i);
+    }
+
+    return sum;
+}
+```
+
+Here we basically have ==O(2N), but we can drop the constant of 2 because we are interested in the growth of the algorithm, not necessarily what is actually happening.
