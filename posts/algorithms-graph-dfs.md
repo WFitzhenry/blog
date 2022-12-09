@@ -1,6 +1,5 @@
 ---
 title: 'Depth First Search'
-socialImage: images/22-09-2021.jpg
 ---
 
 /i/https://codepen.io/brisad/embed/dmMoYw?default-tab=result&editable=true

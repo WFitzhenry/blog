@@ -8,55 +8,51 @@
       "items": []
     },
     {
-      "name": "principles",
-      "label": "Comp. Science Principles",
-      "route": "/post/comp-sci-principles",
-      "items": [
-        {
-          "name": "bigo",
-          "label": "Big O Notation",
-          "route": "/post/comp-sci-principles-bigo-notation"
-        }
-      ]
-    },
-    {
       "name": "dataStructures",
       "label": "Data Structures",
-      "route": "/post/nextjs-page-options-and-how-they-work",
+      "route": "/post/data-structures-arrays",
       "items": [
         {
           "name": "array",
-          "label": "Arrays and Linked Lists",
-          "route": "/post/nextjs-page-options-and-how-they-work"
+          "label": "Arrays",
+          "route": "/post/data-structures-arrays"
         },
         {
-          "name": "recursion",
-          "label": "Stacks and Queues",
-          "route": "/post/nextjs-page-options-and-how-they-work"
+          "name": "linkedlists",
+          "label": "Linked Lists",
+          "route": "/post/data-structures-linked-lists"
+        },
+        {
+          "name": "queue",
+          "label": "Queue",
+          "route": "/post/data-structures-queue"
+        },
+        {
+          "name": "stack",
+          "label": "Stack",
+          "route": "/post/data-structures-stack"
+        },
+        {
+          "name": "arraylist",
+          "label": "Array List",
+          "route": "/post/data-structures-arraylist"
+        },
+        {
+          "name": "arraybuffer",
+          "label": "Array Buffer",
+          "route": "/post/data-structures-arraybuffer"
         },
         {
           "name": "trees",
           "label": "Trees",
-          "route": "/post/nextjs-page-options-and-how-they-work"
-        }
-      ]
-    },
-    {
-      "name": "codingmath",
-      "label": "Coding Math",
-      "route": "/post/coding-math-intro",
-      "items": [
-        {
-          "name": "trigonometry",
-          "label": "Trigonometry",
-          "route": "/post/coding-math-trigonometry"
+          "route": "/post/data-structures-trees"
         }
       ]
     },
     {
       "name": "Algorithms",
       "label": "Algorithms",
-      "route": "/post/algorithms",
+      "route": "/post/algorithms-bigo",
       "items": [
         {
           "name": "bigo",
@@ -64,21 +60,53 @@
           "route": "/post/algorithms-bigo"
         },
         {
+          "name": "mazesolver",
+          "label": "Maze Solver",
+          "route": "/post/algorithms-mazesolver"
+        },
+        {
           "name": "algorithms-search",
           "label": "Search algorithms",
-          "route": "/post/algorithms-search",
+          "route": "/post/algorithms-search-linear",
           "items": [
             {
               "name": "linear",
               "label": "Linear Search",
               "route": "/post/algorithms-search-linear"
+            },
+            {
+              "name": "binary",
+              "label": "Binary Search",
+              "route": "/post/algorithms-search-binary"
+            },
+            {
+              "name": "crystal",
+              "label": "Crystal Ball Problem",
+              "route": "/post/algorithms-search-crystal-ball"
+            }
+          ]
+        },
+        {
+          "name": "algorithms-sorting",
+          "label": "Sorting algorithms",
+          "route": "/post/algorithms-sorting-bubble",
+          "items": [
+            {
+              "name": "bubble",
+              "label": "Bubble Sort",
+              "route": "/post/algorithms-sorting-bubble"
+            },
+            {
+              "name": "quicksort",
+              "label": "QuickSort",
+              "route": "/post/algorithms-sorting-quicksort"
             }
           ]
         },
         {
           "name": "algorithms-graph",
           "label": "Graph algorithms",
-          "route": "/post/algorithms-graph",
+          "route": "/post/algorithms-graph-dfs",
           "items": [
             {
               "name": "dfs",
@@ -96,6 +124,28 @@
               "route": "/post/algorithms-graph-dijkstra"
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "codingmath",
+      "label": "Coding Math",
+      "route": "/post/coding-math-trigonometry",
+      "items": [
+        {
+          "name": "trigonometry",
+          "label": "Trigonometry",
+          "route": "/post/coding-math-trigonometry"
+        },
+        {
+          "name": "more-trigonometry",
+          "label": "More trigonometry",
+          "route": "/post/coding-math-more-trig"
+        },
+        {
+          "name": "circles",
+          "label": "Circles",
+          "route": "/post/coding-math-circles"
         }
       ]
     },

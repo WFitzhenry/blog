@@ -9,6 +9,7 @@ import Link from 'next/link'
 
 function SidebarItem({ depthStep = 10, depth = 0, item, expanded, ...rest }) {
   const { label, items, onClick: onClickProp } = item
+  // console.log(rest)
   // const initialState =
   //   expanded === undefined ? true : !item.itemKeys?.includes(expanded)
   const [collapsed, setCollapsed] = useState(true)
@@ -30,7 +31,7 @@ function SidebarItem({ depthStep = 10, depth = 0, item, expanded, ...rest }) {
 
   if (Array.isArray(items) && items.length) {
     expandIcon = !collapsed ? (
-      <ExpandLessIcon className={'font-bold text-green-500'} />
+      <ExpandLessIcon className={'font-bold text-emerald-400'} />
     ) : (
       <ExpandMoreIcon />
     )
@@ -87,6 +88,7 @@ function Sidebar({ items, depthStep, depth, expanded }) {
                 depth={depth}
                 expanded={expanded}
                 item={sidebarItem}
+                // selected={true}
               />
             )}
           </Fragment>

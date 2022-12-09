@@ -1,5 +1,8 @@
 ---
 title: 'Gitlab Pipelines'
+topLevel: true
+socialImage: images/cicd.jpeg
+topLeveLTitle: 'Gitlab DevOps'
 ---
 
 ::: info

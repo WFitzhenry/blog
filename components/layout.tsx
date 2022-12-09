@@ -4,7 +4,7 @@ import index from '../sidebarMenu.json'
 export default function Layout({ children }) {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="bg-slate-200 py-4 mb-2">
+      <header className="bg-emerald-400 py-4 mb-2">
         <div className="container mx-auto flex justify-center">
           <span className="mx-auto">Notes on Software Development</span>
         </div>
@@ -18,7 +18,7 @@ export default function Layout({ children }) {
         />
         <main className="container mx-auto flex-1">{children}</main>
       </div>
-      <footer className="bg-slate-200 py-4 mt-2">
+      <footer className="bg-emerald-50 py-4 mt-2">
         <div className="container mx-auto flex justify-center">
           &copy; 2022 Warren Fitzhenry
         </div>

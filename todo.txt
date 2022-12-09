@@ -1,7 +1,4 @@
-code highlighting:
-https://daily-dev-tips.com/posts/adding-code-highlighting-to-markdown-code-blocks/
-
-highlight side bar menu with currently active page.
+1. Highlight side bar menu with currently active page.
 
 algorithms:
 

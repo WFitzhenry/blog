@@ -37,10 +37,12 @@ export default function Home({ topLevelPosts }) {
               <Image
                 width={650}
                 height={340}
-                alt={frontmatter.title}
+                alt={frontmatter.topLeveLTitle}
                 src={`/${frontmatter.socialImage}`}
               />
-              <h1 className="p-4">{frontmatter.title}</h1>
+              <h1 className="p-4 text-emerald-400">
+                {frontmatter.topLeveLTitle}
+              </h1>
             </a>
           </Link>
         </div>
