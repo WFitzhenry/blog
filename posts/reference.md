@@ -3,6 +3,7 @@
 ::: info
 _here be dragons_
 This is a container
+:::
 
 - hello
 - goobye
@@ -11,6 +12,10 @@ This is a container
 2. Dynamic page content (`/posts/all`)
 3. Dynamic page paths (`/posts/1`, `posts/2`)
    :::
+
+Maths
+
+`$f_{w,b}(x^{(i)})$`
 
 /i/https://codepen.io/t_afif/embed/WNdLQeY
 

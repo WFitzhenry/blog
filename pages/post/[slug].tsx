@@ -5,6 +5,8 @@ import highlightjs from 'markdown-it-highlightjs'
 import mark from 'markdown-it-mark'
 import container from 'markdown-it-container'
 import iframe from 'markdown-it-iframe'
+import markdownItLatex from 'markdown-it-latex'
+import 'markdown-it-latex/dist/index.css'
 const md = markdownIt()
   .use(highlightjs)
   .use(mark)
@@ -14,6 +16,15 @@ const md = markdownIt()
     width: 800,
     height: 400,
   })
+md.use(markdownItLatex)
+md.render('`$E = mc^2$`')
+md.render('`@(1/2[1-(1/2)^n])/(1-(1/2))=s_n@`')
+md.render(`\`\`\`math
+\oint_C x^3\, dx + 4y^2\, dy
+\`\`\``)
+md.render(`\`\`\`AsciiMath
+oint_Cx^3 dx+4y^2 dy
+\`\`\``)
 import { GetStaticProps, GetStaticPaths } from 'next'
 
 //https://medium.com/swlh/build-sidebar-navigation-in-next-js-with-tailwindcss-3619b6b42e17

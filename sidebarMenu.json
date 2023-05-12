@@ -167,6 +167,40 @@
       ]
     },
     {
+      "name": "machinelearning",
+      "label": "Machine Learning",
+      "route": "/post/machine-learning-intro",
+      "items": [
+        {
+          "name": "intro",
+          "label": "Introduction",
+          "route": "/post/machine-learning-intro"
+        },
+        {
+          "name": "machine-learning-supervised",
+          "label": "Supervised",
+          "route": "/post/machine-learning-linear-regr",
+          "items": [
+            {
+              "name": "linear-regression",
+              "label": "Linear Regression",
+              "route": "/post/machine-learning-linear-regr"
+            },
+            {
+              "name": "gradient-descent",
+              "label": "Gradient Descent",
+              "route": "/post/machine-learning-gradient-descent"
+            },
+            {
+              "name": "multiple-inputs",
+              "label": "Multiple Linear Regression",
+              "route": "/post/machine-learning-multiple-linear-regr"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "gitlab",
       "label": "Gitlab DevOps",
       "route": "/post/gitlab-pipelines",

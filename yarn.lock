@@ -542,6 +542,11 @@ array.prototype.flatmap@^1.2.5:
     define-properties "^1.1.3"
     es-abstract "^1.19.0"
 
+asciimath-to-latex@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/asciimath-to-latex/-/asciimath-to-latex-0.3.2.tgz#1f6e6b36ccc11e3de0ceeffa3dce16483ec28b4e"
+  integrity sha512-+80CDzm6nXdtsYwUdxBOLo7FA6ZO5CfRyYHgqLpUZgavPYqodXHamOQuLZJksV+4CUteJs1h7cBaF63d2qa97Q==
+
 ast-types-flow@^0.0.7:
   version "0.0.7"
   resolved "https://registry.npmjs.org/ast-types-flow/-/ast-types-flow-0.0.7.tgz"
@@ -1642,6 +1647,13 @@ jss@10.9.2, jss@^10.5.1:
     array-includes "^3.1.3"
     object.assign "^4.1.2"
 
+katex@^0.9.0-alpha2:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/katex/-/katex-0.9.0.tgz#26a7d082c21d53725422d2d71da9b2d8455fbd4a"
+  integrity sha512-lp3x90LT1tDZBW2tjLheJ98wmRMRjUHwk4QpaswT9bhqoQZ+XA4cPcjcQBxgOQNwaOSt6ZeL/a6GKQ1of3LFxQ==
+  dependencies:
+    match-at "^0.1.1"
+
 kind-of@^6.0.0, kind-of@^6.0.2:
   version "6.0.3"
   resolved "https://registry.npmjs.org/kind-of/-/kind-of-6.0.3.tgz"
@@ -1743,6 +1755,14 @@ markdown-it-iframe@^1.0.0:
   resolved "https://registry.npmjs.org/markdown-it-iframe/-/markdown-it-iframe-1.0.0.tgz"
   integrity sha512-UA/MZARLnUXJkhd+ECpMUBLLnMmOB4LmgOUL41+1GMqcwZnb1utP6VNZ4ZvEn5o9ZnuAUh6zvYcsQciwxy7WvA==
 
+markdown-it-latex@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-latex/-/markdown-it-latex-0.2.0.tgz#b7421ddb8ecfdb65f4428b50691c1308e18ab2f0"
+  integrity sha512-vCaS6Dws9faA8lZel7Slfa1IYEnbYOjHzian/tDBulONBS+f9vRkFfQ4S0eFnTGtDTTXqE7zAnoezkv18b9IIA==
+  dependencies:
+    asciimath-to-latex "^0.3.2"
+    katex "^0.9.0-alpha2"
+
 markdown-it-mark@^3.0.1:
   version "3.0.1"
   resolved "https://registry.npmjs.org/markdown-it-mark/-/markdown-it-mark-3.0.1.tgz"
@@ -1758,6 +1778,11 @@ markdown-it@^12.3.2:
     linkify-it "^3.0.1"
     mdurl "^1.0.1"
     uc.micro "^1.0.5"
+
+match-at@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/match-at/-/match-at-0.1.1.tgz#25d040d291777704d5e6556bbb79230ec2de0540"
+  integrity sha512-h4Yd392z9mST+dzc+yjuybOGFNOZjmXIPKWjxBd1Bb23r4SmDOsk2NYCU2BMUBGbSpZqwVsZYNq26QS3xfaT3Q==
 
 mdurl@^1.0.1:
   version "1.0.1"

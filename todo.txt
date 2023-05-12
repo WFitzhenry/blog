@@ -18,3 +18,13 @@ https://www.youtube.com/user/codingmath/featured
 
 data science
 https://www.youtube.com/playlist?list=PLGLfVvz_LVvQy4mkmEvtFwZGg1S38MUmn
+
+
+
+Machine learning
+
+Statistcs with python:
+https://www.coursera.org/specializations/statistics-with-python#courses
+
+Mathematics for machine learning
+https://www.coursera.org/specializations/mathematics-machine-learning
