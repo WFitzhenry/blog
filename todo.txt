@@ -28,3 +28,15 @@ https://www.coursera.org/specializations/statistics-with-python#courses
 
 Mathematics for machine learning
 https://www.coursera.org/specializations/mathematics-machine-learning
+
+
+
+TODO Machine learning
+Machine learning 
+- Introduction
+- Intro to NumPy
+- Regression
+ - 
+ - 
+- Classification
+ - 
